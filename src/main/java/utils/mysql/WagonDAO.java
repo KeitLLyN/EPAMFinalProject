@@ -40,13 +40,13 @@ public class WagonDAO extends JDBCDao<Wagon> implements JdbcConstants {
 
     @Override
     protected String getUpdateQuery() {
-        return "UPDATE wagons SET number_of_seats = ?, price_for_one_place = ?, service_class = ?" +
-                "WHERE wagon_id = ? values(?,?,?,?)";
+        return "UPDATE wagons SET number_of_seats=? and price_for_one_place=? and service_class=? and train_id=? " +
+                "WHERE wagon_id = ?";
     }
 
     @Override
     protected String getDeleteQuery() {
-        return "delete from wagons where wagon_id = ? values(?)";
+        return "delete from wagons where wagon_id = ?";
     }
 
     @Override
@@ -91,7 +91,8 @@ public class WagonDAO extends JDBCDao<Wagon> implements JdbcConstants {
             statement.setInt(1, wagon.getNumberOfSeats());
             statement.setInt(2, wagon.getPrice());
             statement.setString(3, wagon.getServiceClass());
-            statement.setInt(4, wagon.getId());
+            statement.setInt(4,wagon.getTrainId());
+            statement.setInt(5, wagon.getId());
         } catch (SQLException e) {
             LOG.error("Couldn't prepare statement for update");
             LOG.error(e.getMessage() + "\n" + Arrays.toString(e.getStackTrace()));

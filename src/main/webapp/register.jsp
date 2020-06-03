@@ -10,7 +10,7 @@
 <body>
 
 
-<form class="modal-content animate" action="register" method="post">
+<form id="register" class="modal-content animate" action="register" method="post" onsubmit="return validate('register','email')">
     <div class="container">
         <label for="newUserName"><b>User Name</b></label>
         <input type="text" placeholder="Enter User Name" name="userName" id="newUserName" required>
@@ -36,6 +36,7 @@
 
 <script>
     <%@ include file="javaScript/checkPassword.js" %>
+    <%@ include file="javaScript/checkEmail.js" %>
 </script>
 </body>
 </html>

@@ -37,4 +37,44 @@
         <servlet-name>ChooseWagonServlet</servlet-name>
         <url-pattern>/main/choose</url-pattern>
     </servlet-mapping>
+
+    <servlet-mapping>
+        <servlet-name>showWagonsServlet</servlet-name>
+        <url-pattern>/manageMainPage/showWagons</url-pattern>
+    </servlet-mapping>
+
+    <servlet-mapping>
+        <servlet-name>TrainsServlet</servlet-name>
+        <url-pattern>/trains</url-pattern>
+    </servlet-mapping>
+
+    <servlet-mapping>
+        <servlet-name>UsersServlet</servlet-name>
+        <url-pattern>/manageMainPage/users</url-pattern>
+    </servlet-mapping>
+
+    <servlet-mapping>
+        <servlet-name>WagonsServlet</servlet-name>
+        <url-pattern>/manageMainPage/wagons</url-pattern>
+    </servlet-mapping>
+
+    <filter>
+        <filter-name>hiddenHttpMethodFilter</filter-name>
+        <filter-class>org.springframework.web.filter.HiddenHttpMethodFilter</filter-class>
+    </filter>
+
+    <filter-mapping>
+        <filter-name>hiddenHttpMethodFilter</filter-name>
+        <servlet-name>TrainsServlet</servlet-name>
+    </filter-mapping>
+
+    <filter-mapping>
+        <filter-name>hiddenHttpMethodFilter</filter-name>
+        <servlet-name>UsersServlet</servlet-name>
+    </filter-mapping>
+
+    <filter-mapping>
+        <filter-name>hiddenHttpMethodFilter</filter-name>
+        <servlet-name>WagonsServlet</servlet-name>
+    </filter-mapping>
 </web-app>

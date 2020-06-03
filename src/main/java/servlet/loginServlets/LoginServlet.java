@@ -1,10 +1,9 @@
-package servlet;
+package servlet.loginServlets;
 
 import entity.User;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import utils.AppUtils;
-import utils.dao.JDBCDao;
 import utils.dao.interfaces.DaoFactory;
 import utils.dao.interfaces.GenericDao;
 import utils.mysql.Factory;

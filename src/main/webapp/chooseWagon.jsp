@@ -9,7 +9,7 @@
     </style>
 </head>
 <body>
-<h2>Zebra Striped Table</h2>
+<h2>Choose wagon number and count of seats you need</h2>
 <div class="modal-content animate">
     <table>
         <tr>
@@ -28,17 +28,13 @@
                     <td><input type="number" placeholder="1" min="1" max="${wagon.numberOfSeats}" name="countOfSeats"> / ${wagon.numberOfSeats}</td>
                     <td>${wagon.price}<b>$</b></td>
                     <td>
-
                         <input type="hidden" name="wagonPrice" value="${wagon.price}">
                         <input type="hidden" name="wagonService" value="${wagon.serviceClass}">
                         <input type="hidden" name="wagonID" value="${wagon.id}">
                         <button type="submit" class="btn">Choose wagon</button>
-
                     </td>
                 </form>
-
             </tr>
-
         </c:forEach>
     </table>
 </div>

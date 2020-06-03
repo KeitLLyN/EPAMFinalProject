@@ -1,4 +1,4 @@
-package servlet;
+package servlet.loginServlets;
 
 import entity.User;
 import org.apache.logging.log4j.LogManager;
@@ -36,7 +36,7 @@ public class RegisterServlet extends HttpServlet {
             GenericDao<User> userDao = new UserDao(connection);
             List<User> users = userDao.findBy(new String[]{email, password});
             User user = new User(name,email,password, role);
-            if (users.size() == 0){
+            if (users == null){
                 userDao.insert(user);
                 LoginServlet.storeLoggedUser(request,response,user);
             }else{

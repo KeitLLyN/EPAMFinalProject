@@ -31,22 +31,7 @@ public class Train implements Identified {
         this.wagons = wagons;
 
     }
-    public void makeMapsOfData(){
-        for(Wagon wagon : wagons) {
-            this.serviceTypes.add(wagon.getServiceClass());
-        }
-        for(String serviceType: serviceTypes){
-            int sumOfSeats = wagons.stream()
-                    .filter(wagon -> wagon.getServiceClass().equals(serviceType))
-                    .mapToInt(Wagon::getNumberOfSeats).sum();
-            int price = wagons.stream()
-                    .filter(wagon -> wagon.getServiceClass().equals(serviceType))
-                    .min(Comparator.comparing(Wagon::getPrice))
-                    .get().getPrice();
-            this.serviceToSeats.put(serviceType,sumOfSeats);
-            this.serviceToPrice.put(serviceType,price);
-        }
-    }
+
 
     public String getFrom() {
         return from;
@@ -109,6 +94,7 @@ public class Train implements Identified {
     }
     public void setWagons(List<Wagon> wagons) {
         this.wagons = wagons;
+        makeMapsOfData();
     }
 
     public Map<String, Integer> getServiceToPrice() {
@@ -138,5 +124,22 @@ public class Train implements Identified {
         return wagons.stream()
                 .filter(wagon -> wagon.getServiceClass().equals(service))
                 .collect(Collectors.toList());
+    }
+
+    private void makeMapsOfData(){
+        for(Wagon wagon : wagons) {
+            this.serviceTypes.add(wagon.getServiceClass());
+        }
+        for(String serviceType: serviceTypes){
+            int sumOfSeats = wagons.stream()
+                    .filter(wagon -> wagon.getServiceClass().equals(serviceType))
+                    .mapToInt(Wagon::getNumberOfSeats).sum();
+            int price = wagons.stream()
+                    .filter(wagon -> wagon.getServiceClass().equals(serviceType))
+                    .min(Comparator.comparing(Wagon::getPrice))
+                    .get().getPrice();
+            this.serviceToSeats.put(serviceType,sumOfSeats);
+            this.serviceToPrice.put(serviceType,price);
+        }
     }
 }

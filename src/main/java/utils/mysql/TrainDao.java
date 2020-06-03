@@ -52,12 +52,12 @@ public class TrainDao extends JDBCDao<Train> implements JdbcConstants {
     @Override
     protected String getUpdateQuery() {
         return "UPDATE trains SET from_country = ?, to_country = ?, date_ = ?" +
-                "start_time = ?, finish_time = ? WHERE train_id = ? values(?,?,?,?,?,?)";
+                "start_time = ?, finish_time = ? WHERE train_id = ?";
     }
 
     @Override
     protected String getDeleteQuery() {
-        return "delete from trains where train_id = ? values(?)";
+        return "delete from trains where train_id = ?";
     }
 
     @Override
@@ -75,7 +75,6 @@ public class TrainDao extends JDBCDao<Train> implements JdbcConstants {
                 List<Wagon> wagons = new WagonDAO(connection).findBy(new String[]{"train_id", String.valueOf(train.getId())});
                 if (wagons.size() > 0) {
                     train.setWagons(wagons);
-                    train.makeMapsOfData();
                     trains.add(train);
                 }
             }
