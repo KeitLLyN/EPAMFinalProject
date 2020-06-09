@@ -15,10 +15,11 @@ import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 import java.sql.Connection;
 import java.util.List;
+import java.util.stream.Collectors;
 
 @WebServlet(name = "MainServlet", urlPatterns = "main")
 public class MainServlet extends HttpServlet {
-    private List<Train> trains = null;
+    private List<Train> trains;
     private DaoFactory factory;
     private Connection connection;
 
@@ -35,6 +36,9 @@ public class MainServlet extends HttpServlet {
             connection = factory.getConnection();
             GenericDao<Train> trainDao = new TrainDao(connection);
             trains = trainDao.findBy(new String[]{from,to,date});
+            trains = trains.stream()
+                    .filter(train -> train.getWagons().size() > 0)
+                    .collect(Collectors.toList());
         }finally {
             factory.closeConnection(connection);
         }

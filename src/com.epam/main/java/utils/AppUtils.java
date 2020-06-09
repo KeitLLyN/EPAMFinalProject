@@ -12,13 +12,10 @@ public class AppUtils {
     private static final Map<Integer, String> id_uri_map = new HashMap<>();
     private static final Map<String, Integer> uri_id_map = new HashMap<>();
 
-    // Сохранить информацию пользователя в Session.
     public static void storeLoggedUser(HttpSession session, User loggedUser) {
-        // На JSP можно получить доступ через ${loginedUser}
         session.setAttribute("loggedUser", loggedUser);
     }
 
-    // Получить информацию пользователя, сохраненную в Session.
     public static User getLoggedUser(HttpSession session) {
         User loggedUser = (User) session.getAttribute("loggedUser");
         return loggedUser;
@@ -38,10 +35,6 @@ public class AppUtils {
     }
 
     public static String getRedirectAfterLoginUrl(HttpSession session, int redirectId) {
-        String url = id_uri_map.get(redirectId);
-        if (url != null) {
-            return url;
-        }
-        return null;
+        return id_uri_map.get(redirectId);
     }
 }

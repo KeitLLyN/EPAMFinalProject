@@ -19,7 +19,6 @@ public class SecurityUtils {
         return false;
     }
 
-    // Проверить имеет ли данный 'request' подходящую роль?
     public static boolean hasPermission(HttpServletRequest request) {
         String urlPattern = UrlPatternUtils.getUrlPattern(request);
 

@@ -22,6 +22,13 @@ public class Wagon implements Identified {
         this.trainId = trainId;
     }
 
+    public Wagon(String serviceClass, int price, int numberOfSeats, int trainId) {
+        this.serviceClass = serviceClass;
+        this.price = price;
+        this.numberOfSeats = numberOfSeats;
+        this.trainId = trainId;
+    }
+
     public int getTrainId() {
         return trainId;
     }

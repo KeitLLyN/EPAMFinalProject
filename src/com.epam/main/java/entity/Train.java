@@ -21,6 +21,14 @@ public class Train implements Identified {
 
     }
 
+    public Train(String from, String to, String date, String startTime, String finishTime){
+        this.from = from;
+        this.to = to;
+        this.date = date;
+        this.startTime = startTime;
+        this.finishTime = finishTime;
+    }
+
     public Train(String from, String to, String date, String startTime, String finishTime, int id, List<Wagon> wagons) {
         this.from = from;
         this.to = to;
@@ -134,12 +142,12 @@ public class Train implements Identified {
             int sumOfSeats = wagons.stream()
                     .filter(wagon -> wagon.getServiceClass().equals(serviceType))
                     .mapToInt(Wagon::getNumberOfSeats).sum();
-            int price = wagons.stream()
+            int minPrice = wagons.stream()
                     .filter(wagon -> wagon.getServiceClass().equals(serviceType))
                     .min(Comparator.comparing(Wagon::getPrice))
                     .get().getPrice();
             this.serviceToSeats.put(serviceType,sumOfSeats);
-            this.serviceToPrice.put(serviceType,price);
+            this.serviceToPrice.put(serviceType,minPrice);
         }
     }
 }

@@ -13,7 +13,7 @@
 <body>
 
 
-<form class="modal-content animate" action="login" method="post">
+<form id="login" class="modal-content animate" action="login" method="post" onsubmit="return validate('login','userName')">
     <div class="container">
         <label for="userName"><b>Username</b></label>
         <input type="text" placeholder="Enter Username" name="userName" id="userName" required>
@@ -21,7 +21,7 @@
         <label for="password"><b>Password</b></label>
         <input type="password" placeholder="Enter Password" name="psw" id="password" required>
 
-        <button type="submit" onclick="isEmail()">Login</button>
+        <button type="submit">Login</button>
     </div>
 
     <div class="container" style="background-color:#f1f1f1">

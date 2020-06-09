@@ -1,6 +1,5 @@
 package request;
 import java.security.Principal;
-import java.util.List;
 
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletRequestWrapper;
@@ -30,8 +29,6 @@ public class UserRoleRequestWrapper extends HttpServletRequestWrapper {
         if (this.user == null) {
             return realRequest.getUserPrincipal();
         }
-
-        // Make an anonymous implementation to just return our user
         return new Principal() {
             @Override
             public String getName() {

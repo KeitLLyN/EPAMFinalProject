@@ -35,12 +35,12 @@ public class WagonDAO extends JDBCDao<Wagon> implements JdbcConstants {
 
     @Override
     protected String getInsertQuery() {
-        return "insert into wagons (wagon_id, train_id, number_of_seats, price_for_one_place, service_class) values (?,?,?,?,?)";
+        return "insert into wagons (train_id, number_of_seats, price_for_one_place, service_class) values (?,?,?,?)";
     }
 
     @Override
     protected String getUpdateQuery() {
-        return "UPDATE wagons SET number_of_seats=? and price_for_one_place=? and service_class=? and train_id=? " +
+        return "UPDATE wagons SET number_of_seats = ?, price_for_one_place = ?, service_class = ? " +
                 "WHERE wagon_id = ?";
     }
 
@@ -60,7 +60,6 @@ public class WagonDAO extends JDBCDao<Wagon> implements JdbcConstants {
                 wagon.setNumberOfSeats(result.getInt("number_of_seats"));
                 wagon.setServiceClass(result.getString("service_class"));
                 wagon.setTrainId(result.getInt("train_id"));
-
                 if (wagon.getNumberOfSeats() > 0)
                     wagons.add(wagon);
             }
@@ -74,11 +73,10 @@ public class WagonDAO extends JDBCDao<Wagon> implements JdbcConstants {
     @Override
     protected void prepareStatementInsert(PreparedStatement statement, Wagon wagon) {
         try {
-            statement.setInt(1, wagon.getId());
-            statement.setInt(2, wagon.getTrainId());
-            statement.setInt(3, wagon.getNumberOfSeats());
-            statement.setInt(4, wagon.getPrice());
-            statement.setString(5, wagon.getServiceClass());
+            statement.setInt(1, wagon.getTrainId());
+            statement.setInt(2, wagon.getNumberOfSeats());
+            statement.setInt(3, wagon.getPrice());
+            statement.setString(4, wagon.getServiceClass());
         } catch (SQLException e) {
             LOG.error("Couldn't prepare statement for insert");
             LOG.error(e.getMessage() + "\n" + Arrays.toString(e.getStackTrace()));
@@ -91,7 +89,6 @@ public class WagonDAO extends JDBCDao<Wagon> implements JdbcConstants {
             statement.setInt(1, wagon.getNumberOfSeats());
             statement.setInt(2, wagon.getPrice());
             statement.setString(3, wagon.getServiceClass());
-            statement.setInt(4,wagon.getTrainId());
             statement.setInt(5, wagon.getId());
         } catch (SQLException e) {
             LOG.error("Couldn't prepare statement for update");

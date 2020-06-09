@@ -17,7 +17,6 @@ public class SecurityConfig {
     private static void init() {
         List<String> urlPatternsEmployee = new ArrayList<>();
         urlPatternsEmployee.add("/main");
-//        urlPatternsEmployee.add("/employeeTask");
         mapConfig.put(ROLE_EMPLOYEE, urlPatternsEmployee);
 
         List<String> urlPatternsManager = new ArrayList<>();

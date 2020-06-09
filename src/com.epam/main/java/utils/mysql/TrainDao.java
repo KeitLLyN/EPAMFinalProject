@@ -51,7 +51,7 @@ public class TrainDao extends JDBCDao<Train> implements JdbcConstants {
 
     @Override
     protected String getUpdateQuery() {
-        return "UPDATE trains SET from_country = ?, to_country = ?, date_ = ?" +
+        return "UPDATE trains SET from_country = ?, to_country = ?, date_ = ?, " +
                 "start_time = ?, finish_time = ? WHERE train_id = ?";
     }
 
@@ -73,10 +73,8 @@ public class TrainDao extends JDBCDao<Train> implements JdbcConstants {
                 train.setFinishTime(result.getString("finish_time"));
                 train.setDate(result.getString("date_"));
                 List<Wagon> wagons = new WagonDAO(connection).findBy(new String[]{"train_id", String.valueOf(train.getId())});
-                if (wagons.size() > 0) {
-                    train.setWagons(wagons);
-                    trains.add(train);
-                }
+                train.setWagons(wagons);
+                trains.add(train);
             }
         } catch (SQLException e) {
             LOG.error("Couldn't parse data");

@@ -25,7 +25,7 @@
                 <form action="checkout" method="get">
                     <td><b>#</b>${wagon.id}</td>
                     <td>${wagon.serviceClass}</td>
-                    <td><input type="number" placeholder="1" min="1" max="${wagon.numberOfSeats}" name="countOfSeats"> / ${wagon.numberOfSeats}</td>
+                    <td><input type="number" placeholder="1" min="1" max="${wagon.numberOfSeats}" name="countOfSeats" required> / ${wagon.numberOfSeats}</td>
                     <td>${wagon.price}<b>$</b></td>
                     <td>
                         <input type="hidden" name="wagonPrice" value="${wagon.price}">

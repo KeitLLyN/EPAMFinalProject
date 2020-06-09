@@ -1,7 +1,5 @@
 package utils.mysql;
 
-import entity.Train;
-import entity.Wagon;
 import utils.dao.JDBCDao;
 import utils.dao.interfaces.JdbcConstants;
 import entity.User;
@@ -23,6 +21,17 @@ public class UserDao extends JDBCDao<User> implements JdbcConstants {
     }
 
     @Override
+    public List<User> findBy(String[] args){
+        List<User> users = new ArrayList<>();
+        LOG.info("trying to connect to database");
+        String sql = getSelectQuery() + String.format(" WHERE email = '%s'",args[0]);
+        users = prepareStatementFindByParam(sql,users);
+        if (users.size() > 0)
+            return users.get(0).getPassword().equals(HashPassword.md5(args[1])) ? users:null;
+        return null;
+    }
+
+    @Override
     protected String getSelectQuery() {
         return "select * from users";
     }
@@ -34,13 +43,13 @@ public class UserDao extends JDBCDao<User> implements JdbcConstants {
 
     @Override
     protected String getUpdateQuery() {
-        return "UPDATE users SET email = ?, password = ?, name = ?" +
-                "role = ? WHERE id = ? values(?,?,?,?,?)";
+        return "UPDATE users SET email = ?, password = ?, name = ?, " +
+                "role = ? WHERE id = ?";
     }
 
     @Override
     protected String getDeleteQuery() {
-        return "delete from users where id = ? values(?)";
+        return "delete from users where id = ?";
     }
 
     @Override
@@ -88,16 +97,5 @@ public class UserDao extends JDBCDao<User> implements JdbcConstants {
             LOG.error("Couldn't prepare statement for update");
             LOG.error(e.getMessage() + "\n" + Arrays.toString(e.getStackTrace()));
         }
-    }
-
-    @Override
-    public List<User> findBy(String[] args){
-        List<User> users = new ArrayList<>();
-        LOG.info("trying to connect to database");
-        String sql = getSelectQuery() + String.format(" WHERE email = '%s'",args[0]);
-        users = prepareStatementFindByParam(sql,users);
-        if (users.size() > 0)
-            return users.get(0).getPassword().equals(HashPassword.md5(args[1])) ? users:null;
-        return null;
     }
 }

@@ -5,7 +5,7 @@
     <style>
         <%@ include file="css/loginStyle.css" %>
     </style>
-    <title>Login</title>
+    <title>Register</title>
 </head>
 <body>
 
