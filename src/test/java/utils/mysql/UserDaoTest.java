@@ -26,7 +26,7 @@ public class UserDaoTest {
     public void shouldReturnAdminUser_WhenFindBy(){
         String email = "admin.admin@gmail.com";
         String password = "20583007";
-        User user = userDao.findBy(new String[]{email, password}).get(0);
+        User user = userDao.findBy(email, password).get(0);
         Assert.assertNotNull(user);
     }
 
@@ -34,7 +34,7 @@ public class UserDaoTest {
     public void shouldReturnNull_WhenFindBy(){
         String email = "admin.admin@gmail.com";
         String password = "20583008";
-        Assert.assertNull(userDao.findBy(new String[]{email, password}));
+        Assert.assertNull(userDao.findBy(email, password));
     }
 
     @After

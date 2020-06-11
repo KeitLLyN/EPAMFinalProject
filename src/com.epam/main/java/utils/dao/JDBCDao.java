@@ -51,7 +51,7 @@ public abstract class JDBCDao<T extends Identified> implements GenericDao<T> {
     }
 
     @Override
-    public abstract List<T> findBy(String[] args);
+    public abstract List<T> findBy(String ...strings);
     @Override
     public T getByKey(String id, int key) {
         T object = null;

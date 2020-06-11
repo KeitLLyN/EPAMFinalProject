@@ -30,6 +30,7 @@ public class TrainsServlet extends HttpServlet {
             e.printStackTrace();
         }
     }
+
     @Override
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         String from = request.getParameter("from");
@@ -50,8 +51,7 @@ public class TrainsServlet extends HttpServlet {
 
     @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-        RequestDispatcher dispatcher = this.getServletContext().getRequestDispatcher("/manageMainPage.jsp");
-        dispatcher.forward(request,response);
+        request.getRequestDispatcher("/manageMainPage.jsp").forward(request,response);
     }
 
     @Override

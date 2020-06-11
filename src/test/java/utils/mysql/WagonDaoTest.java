@@ -29,9 +29,9 @@ public class WagonDaoTest {
     @Test
     public void shouldReturnListOfWagons_WhenFindBy(){
         int id = trainDao.getAll().get(0).getId();
-        List<Wagon> wagons = wagonDao.findBy(new String[]{"train_id",String.valueOf(id)});
+        List<Wagon> wagons = wagonDao.findBy("train_id",String.valueOf(id));
         Assert.assertNotNull(wagons);
-        Assert.assertEquals(1,wagons.get(0).getTrainId());
+        Assert.assertEquals(7,wagons.get(0).getTrainId());
     }
 
     @After

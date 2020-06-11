@@ -47,7 +47,8 @@ public class CheckoutServlet extends HttpServlet {
         countOfSeats = Integer.parseInt(request.getParameter("countOfSeats"));
 
         request.setAttribute("countOfSeats", countOfSeats);
-        RequestDispatcher dispatcher = this.getServletContext().getRequestDispatcher("/checkout.jsp");
-        dispatcher.forward(request,response);
+        request.getRequestDispatcher("/checkout.jsp").forward(request,response);
+//        RequestDispatcher dispatcher = this.getServletContext().getRequestDispatcher("/checkout.jsp");
+//        dispatcher.forward(request,response);
     }
 }

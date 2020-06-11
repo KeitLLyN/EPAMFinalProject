@@ -15,7 +15,7 @@ import java.util.Comparator;
 import java.util.List;
 
 public class TrainDao extends JDBCDao<Train> implements JdbcConstants {
-    private static final Logger LOG = LogManager.getLogger(UserDao.class);
+    private static final Logger LOG = LogManager.getLogger(TrainDao.class);
 
     public TrainDao(){
         super();
@@ -25,10 +25,10 @@ public class TrainDao extends JDBCDao<Train> implements JdbcConstants {
     }
 
     @Override
-    public List<Train> findBy(String[] args) {
+    public List<Train> findBy(String ...strings) {
         List<Train> trains = new ArrayList<>();
-        LOG.info("trying to connect to database");
-        String sql = getSelectQueryByDate(args[0], args[1], args[2]);
+        LOG.info("trying to get data from DB VIA findBy");
+        String sql = getSelectQueryByDate(strings[0], strings[1], strings[2]);
         trains = prepareStatementFindByParam(sql,trains);
         trains.sort(Comparator.comparing(Train::getStartTime));
         return trains;
@@ -65,6 +65,7 @@ public class TrainDao extends JDBCDao<Train> implements JdbcConstants {
         List<Train> trains = new ArrayList<>();
         try {
             while (result.next()){
+                LOG.info("Parsing result set");
                 Train train = new Train();
                 train.setId(result.getInt("train_id"));
                 train.setFrom(result.getString("from_country"));
@@ -72,7 +73,7 @@ public class TrainDao extends JDBCDao<Train> implements JdbcConstants {
                 train.setStartTime(result.getString("start_time"));
                 train.setFinishTime(result.getString("finish_time"));
                 train.setDate(result.getString("date_"));
-                List<Wagon> wagons = new WagonDAO(connection).findBy(new String[]{"train_id", String.valueOf(train.getId())});
+                List<Wagon> wagons = new WagonDAO(connection).findBy("train_id", String.valueOf(train.getId()));
                 train.setWagons(wagons);
                 trains.add(train);
             }
@@ -86,13 +87,14 @@ public class TrainDao extends JDBCDao<Train> implements JdbcConstants {
     @Override
     protected void prepareStatementInsert(PreparedStatement statement, Train train) {
         try {
+            LOG.info("Trying to set prepare statement for INSERT method");
             statement.setString(1, train.getFrom());
             statement.setString(2, train.getTo());
             statement.setString(3, train.getDate());
             statement.setString(4, train.getStartTime());
             statement.setString(5, train.getFinishTime());
         } catch (SQLException e) {
-            LOG.error("Couldn't prepare statement for insert");
+            LOG.error("Couldn't prepare statement for INSERT");
             LOG.error(e.getMessage() + "\n" + Arrays.toString(e.getStackTrace()));
         }
     }
@@ -100,6 +102,7 @@ public class TrainDao extends JDBCDao<Train> implements JdbcConstants {
     @Override
     protected void prepareStatementUpdate(PreparedStatement statement, Train train) {
         try {
+            LOG.info("Trying to set prepare statement for UPDATE method");
             statement.setString(1, train.getFrom());
             statement.setString(2, train.getTo());
             statement.setString(3, train.getDate());
@@ -107,7 +110,7 @@ public class TrainDao extends JDBCDao<Train> implements JdbcConstants {
             statement.setString(5, train.getFinishTime());
             statement.setInt(6, train.getId());
         } catch (SQLException e) {
-            LOG.error("Couldn't prepare statement for update");
+            LOG.error("Couldn't prepare statement for UPDATE");
             LOG.error(e.getMessage() + "\n" + Arrays.toString(e.getStackTrace()));
         }
     }

@@ -4,7 +4,7 @@ import java.util.*;
 
 public class SecurityConfig {
     public static final String ROLE_MANAGER = "MANAGER";
-    public static final String ROLE_EMPLOYEE = "EMPLOYEE";
+    public static final String ROLE_USER = "USER";
 
     // String: Role
     // List<String>: urlPatterns.
@@ -17,7 +17,7 @@ public class SecurityConfig {
     private static void init() {
         List<String> urlPatternsEmployee = new ArrayList<>();
         urlPatternsEmployee.add("/main");
-        mapConfig.put(ROLE_EMPLOYEE, urlPatternsEmployee);
+        mapConfig.put(ROLE_USER, urlPatternsEmployee);
 
         List<String> urlPatternsManager = new ArrayList<>();
         urlPatternsManager.add("/main");

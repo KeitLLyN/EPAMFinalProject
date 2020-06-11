@@ -32,24 +32,21 @@ public class LoginServlet extends HttpServlet {
             factory = new Factory();
             connection = factory.getConnection();
             GenericDao<User> userDao = new UserDao(connection);
-            List<User> users = userDao.findBy(new String[]{userName, userPassword});
+            List<User> users = userDao.findBy(userName, userPassword);
             if (users == null){
                 String errorMessage = "Check your user name and password";
                 request.setAttribute("errorMessage",errorMessage);
-                RequestDispatcher dispatcher = this.getServletContext().getRequestDispatcher("/errorLogin.jsp");
-                dispatcher.forward(request,response);
+                request.getRequestDispatcher("/errorLogin.jsp").forward(request,response);
                 return;
             }
             storeLoggedUser(request,response,users.get(0));
         }finally {
             factory.closeConnection(connection);
         }
-
     }
 
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-        RequestDispatcher dispatcher = this.getServletContext().getRequestDispatcher("/login.jsp");
-        dispatcher.forward(request,response);
+        request.getRequestDispatcher("/login.jsp").forward(request,response);
     }
 
     protected static void storeLoggedUser(HttpServletRequest request,HttpServletResponse response, User user) throws IOException{

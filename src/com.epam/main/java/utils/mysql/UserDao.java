@@ -21,13 +21,13 @@ public class UserDao extends JDBCDao<User> implements JdbcConstants {
     }
 
     @Override
-    public List<User> findBy(String[] args){
+    public List<User> findBy(String ... strings){
+        LOG.info("Getting data from findBy method");
         List<User> users = new ArrayList<>();
-        LOG.info("trying to connect to database");
-        String sql = getSelectQuery() + String.format(" WHERE email = '%s'",args[0]);
+        String sql = getSelectQuery() + String.format(" WHERE email = '%s'",strings[0]);
         users = prepareStatementFindByParam(sql,users);
         if (users.size() > 0)
-            return users.get(0).getPassword().equals(HashPassword.md5(args[1])) ? users:null;
+            return users.get(0).getPassword().equals(HashPassword.md5(strings[1])) ? users:null;
         return null;
     }
 
@@ -54,6 +54,7 @@ public class UserDao extends JDBCDao<User> implements JdbcConstants {
 
     @Override
     protected List<User> parseResultSet(ResultSet result) {
+        LOG.info("Trying to parse result set");
         List<User> users = new ArrayList<>();
         try {
             while (result.next()){
@@ -75,12 +76,13 @@ public class UserDao extends JDBCDao<User> implements JdbcConstants {
     @Override
     protected void prepareStatementInsert(PreparedStatement statement, User user) {
         try {
+            LOG.info("Trying to set prepare statement for INSERT method");
             statement.setString(1, user.getEmail());
             statement.setString(2, user.getPassword());
             statement.setString(3, user.getName());
             statement.setString(4, user.getRole());
         } catch (SQLException e) {
-            LOG.error("Couldn't prepare statement for insert");
+            LOG.error("Couldn't prepare statement for INSERT");
             LOG.error(e.getMessage() + "\n" + Arrays.toString(e.getStackTrace()));
         }
     }
@@ -88,13 +90,14 @@ public class UserDao extends JDBCDao<User> implements JdbcConstants {
     @Override
     protected void prepareStatementUpdate(PreparedStatement statement, User user) {
         try {
+            LOG.info("Trying to set prepare statement for UPDATE method");
             statement.setString(1, user.getEmail());
             statement.setString(2, user.getPassword());
             statement.setString(3, user.getName());
             statement.setString(4, user.getRole());
             statement.setInt(5, user.getId());
         } catch (SQLException e) {
-            LOG.error("Couldn't prepare statement for update");
+            LOG.error("Couldn't prepare statement for UPDATE");
             LOG.error(e.getMessage() + "\n" + Arrays.toString(e.getStackTrace()));
         }
     }

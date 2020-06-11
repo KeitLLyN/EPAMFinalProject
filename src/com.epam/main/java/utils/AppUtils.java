@@ -12,6 +12,8 @@ public class AppUtils {
     private static final Map<Integer, String> id_uri_map = new HashMap<>();
     private static final Map<String, Integer> uri_id_map = new HashMap<>();
 
+    public AppUtils(){}
+
     public static void storeLoggedUser(HttpSession session, User loggedUser) {
         session.setAttribute("loggedUser", loggedUser);
     }

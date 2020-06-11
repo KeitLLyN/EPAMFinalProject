@@ -29,12 +29,12 @@ public class RegisterServlet extends HttpServlet {
         String name = request.getParameter("userName");
         String email = request.getParameter("email");
         String password = request.getParameter("password");
-        String role = "EMPLOYEE";
+        String role = "USER";
         try{
             factory = new Factory();
             connection = factory.getConnection();
             GenericDao<User> userDao = new UserDao(connection);
-            List<User> users = userDao.findBy(new String[]{email, password});
+            List<User> users = userDao.findBy(email, password);
             User user = new User(name,email,password, role);
             if (users == null){
                 userDao.insert(user);
@@ -51,7 +51,6 @@ public class RegisterServlet extends HttpServlet {
     }
 
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-        RequestDispatcher dispatcher = this.getServletContext().getRequestDispatcher("/register.jsp");
-        dispatcher.forward(request,response);
+        request.getRequestDispatcher("/register.jsp").forward(request,response);
     }
 }

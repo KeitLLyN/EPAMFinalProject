@@ -23,12 +23,13 @@ public class ChooseWagonServlet extends HttpServlet {
         HttpSession session = request.getSession();
         Train train = (Train) session.getAttribute("train");
         String service = request.getParameter("wagonService");
-        List<Wagon> wagons = train.getWagonsByService(service) ;
+        List<Wagon> wagons = train.getWagonsByService(service);
 
         request.setAttribute("service",service);
         request.setAttribute("wagons",wagons);
 
-        RequestDispatcher dispatcher = this.getServletContext().getRequestDispatcher("/chooseWagon.jsp");
-        dispatcher.forward(request,response);
+        request.getRequestDispatcher("/chooseWagon.jsp").forward(request,response);
+//        RequestDispatcher dispatcher = this.getServletContext().getRequestDispatcher("/chooseWagon.jsp");
+//        dispatcher.forward(request,response);
     }
 }

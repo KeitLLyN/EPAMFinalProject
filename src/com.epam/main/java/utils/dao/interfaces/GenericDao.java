@@ -7,6 +7,6 @@ public interface GenericDao<T extends Identified> {
     void update(T object);
     void delete(T object);
     void insert(T object);
-    List<T> findBy(String[] args);
+    List<T> findBy(String ...strings);
     List<T> getAll();
 }
