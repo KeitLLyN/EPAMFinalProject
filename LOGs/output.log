@@ -1506,3 +1506,480 @@
 13:16:35.798 [main] INFO  utils.mysql.WagonDAO - trying to get wagons from DB via findBy
 13:16:35.799 [main] INFO  utils.mysql.WagonDAO - trying to parse result set
 13:16:35.799 [main] INFO  utils.mysql.Factory - Closing connection
+14:27:16.936 [main] INFO  utils.mysql.Factory - Creating FACTORY class
+14:27:16.970 [main] INFO  utils.mysql.Factory - Getting connection
+14:27:17.489 [main] INFO  utils.mysql.TrainDao - trying to get data from DB VIA findBy
+14:27:17.527 [main] INFO  utils.mysql.Factory - Closing connection
+14:27:17.531 [main] INFO  utils.mysql.Factory - Creating FACTORY class
+14:27:17.532 [main] INFO  utils.mysql.Factory - Getting connection
+14:27:17.553 [main] INFO  utils.mysql.Factory - Closing connection
+14:27:17.555 [main] INFO  utils.mysql.Factory - Creating FACTORY class
+14:27:17.555 [main] INFO  utils.mysql.Factory - Getting connection
+14:27:17.577 [main] INFO  utils.mysql.UserDao - Getting data from findBy method
+14:27:17.588 [main] INFO  utils.mysql.UserDao - Trying to parse result set
+14:27:17.589 [main] INFO  utils.mysql.Factory - Creating FACTORY class
+14:27:17.589 [main] INFO  utils.mysql.Factory - Getting connection
+14:27:17.612 [main] INFO  utils.mysql.UserDao - Getting data from findBy method
+14:27:17.613 [main] INFO  utils.mysql.UserDao - Trying to parse result set
+14:27:17.613 [main] INFO  utils.mysql.Factory - Closing connection
+14:27:17.615 [main] INFO  utils.mysql.Factory - Closing connection
+14:27:17.618 [main] INFO  utils.mysql.Factory - Creating FACTORY class
+14:27:17.618 [main] INFO  utils.mysql.Factory - Getting connection
+14:27:17.634 [main] INFO  utils.mysql.Factory - Creating FACTORY class
+14:27:17.634 [main] INFO  utils.mysql.Factory - Getting connection
+14:27:17.649 [main] INFO  utils.mysql.UserDao - Getting data from findBy method
+14:27:17.650 [main] INFO  utils.mysql.UserDao - Trying to parse result set
+14:27:17.651 [main] INFO  utils.mysql.Factory - Creating FACTORY class
+14:27:17.651 [main] INFO  utils.mysql.Factory - Getting connection
+14:27:17.668 [main] INFO  utils.mysql.UserDao - Getting data from findBy method
+14:27:17.669 [main] INFO  utils.mysql.UserDao - Trying to parse result set
+14:27:17.671 [main] INFO  utils.mysql.UserDao - Trying to set prepare statement for INSERT method
+14:27:17.679 [main] WARN  servlet.loginServlets.LoginServlet - null
+14:27:17.679 [main] INFO  utils.mysql.Factory - Closing connection
+14:27:17.679 [main] INFO  utils.mysql.UserDao - Getting data from findBy method
+14:27:17.680 [main] INFO  utils.mysql.UserDao - Trying to parse result set
+14:27:17.681 [main] INFO  utils.mysql.UserDao - Getting data from findBy method
+14:27:17.682 [main] INFO  utils.mysql.UserDao - Trying to parse result set
+14:27:17.690 [main] INFO  utils.mysql.Factory - Creating FACTORY class
+14:27:17.690 [main] INFO  utils.mysql.Factory - Getting connection
+14:27:17.708 [main] INFO  utils.mysql.TrainDao - Parsing result set
+14:27:17.709 [main] INFO  utils.mysql.WagonDAO - trying to get wagons from DB via findBy
+14:27:17.718 [main] INFO  utils.mysql.WagonDAO - trying to parse result set
+14:27:17.718 [main] INFO  utils.mysql.TrainDao - Parsing result set
+14:27:17.718 [main] INFO  utils.mysql.WagonDAO - trying to get wagons from DB via findBy
+14:27:17.720 [main] INFO  utils.mysql.WagonDAO - trying to parse result set
+14:27:17.721 [main] INFO  utils.mysql.UserDao - Trying to parse result set
+14:27:17.721 [main] INFO  utils.mysql.WagonDAO - trying to parse result set
+14:27:17.722 [main] INFO  utils.mysql.Factory - Closing connection
+14:27:17.724 [main] INFO  utils.mysql.Factory - Creating FACTORY class
+14:27:17.724 [main] INFO  utils.mysql.Factory - Creating FACTORY class
+14:27:17.724 [main] INFO  utils.mysql.Factory - Getting connection
+14:27:17.743 [main] INFO  utils.mysql.Factory - Creating FACTORY class
+14:27:17.743 [main] INFO  utils.mysql.Factory - Creating FACTORY class
+14:27:17.743 [main] INFO  utils.mysql.Factory - Getting connection
+14:27:17.760 [main] INFO  utils.mysql.TrainDao - Trying to set prepare statement for INSERT method
+14:27:17.763 [main] INFO  utils.mysql.TrainDao - trying to get data from DB VIA findBy
+14:27:17.765 [main] INFO  utils.mysql.TrainDao - Parsing result set
+14:27:17.765 [main] INFO  utils.mysql.WagonDAO - trying to get wagons from DB via findBy
+14:27:17.766 [main] INFO  utils.mysql.WagonDAO - trying to parse result set
+14:27:17.768 [main] INFO  utils.mysql.Factory - Getting connection
+14:27:17.787 [main] INFO  utils.mysql.TrainDao - Parsing result set
+14:27:17.788 [main] INFO  utils.mysql.WagonDAO - trying to get wagons from DB via findBy
+14:27:17.789 [main] INFO  utils.mysql.WagonDAO - trying to parse result set
+14:27:17.790 [main] INFO  utils.mysql.TrainDao - Trying to set prepare statement for UPDATE method
+14:27:17.794 [main] INFO  utils.mysql.Factory - Closing connection
+14:27:17.794 [main] INFO  utils.mysql.TrainDao - trying to get data from DB VIA findBy
+14:27:17.796 [main] INFO  utils.mysql.TrainDao - Parsing result set
+14:27:17.796 [main] INFO  utils.mysql.WagonDAO - trying to get wagons from DB via findBy
+14:27:17.797 [main] INFO  utils.mysql.WagonDAO - trying to parse result set
+14:27:17.803 [main] INFO  utils.mysql.Factory - Creating FACTORY class
+14:27:17.803 [main] INFO  utils.mysql.Factory - Creating FACTORY class
+14:27:17.803 [main] INFO  utils.mysql.Factory - Getting connection
+14:27:17.819 [main] INFO  utils.mysql.TrainDao - Trying to set prepare statement for INSERT method
+14:27:17.822 [main] INFO  utils.mysql.TrainDao - trying to get data from DB VIA findBy
+14:27:17.824 [main] INFO  utils.mysql.TrainDao - Parsing result set
+14:27:17.824 [main] INFO  utils.mysql.WagonDAO - trying to get wagons from DB via findBy
+14:27:17.825 [main] INFO  utils.mysql.WagonDAO - trying to parse result set
+14:27:17.826 [main] INFO  utils.mysql.Factory - Getting connection
+14:27:17.846 [main] INFO  utils.mysql.TrainDao - Parsing result set
+14:27:17.847 [main] INFO  utils.mysql.WagonDAO - trying to get wagons from DB via findBy
+14:27:17.848 [main] INFO  utils.mysql.WagonDAO - trying to parse result set
+14:27:17.853 [main] INFO  utils.mysql.Factory - Closing connection
+14:27:17.853 [main] INFO  utils.mysql.TrainDao - trying to get data from DB VIA findBy
+14:27:17.855 [main] INFO  utils.mysql.Factory - Creating FACTORY class
+14:27:17.855 [main] INFO  utils.mysql.Factory - Creating FACTORY class
+14:27:17.855 [main] INFO  utils.mysql.Factory - Getting connection
+14:27:17.873 [main] INFO  utils.mysql.TrainDao - trying to get data from DB VIA findBy
+14:27:17.874 [main] INFO  utils.mysql.Factory - Getting connection
+14:27:17.889 [main] INFO  utils.mysql.TrainDao - Trying to set prepare statement for INSERT method
+14:27:17.892 [main] INFO  utils.mysql.Factory - Closing connection
+14:27:17.893 [main] INFO  utils.mysql.TrainDao - trying to get data from DB VIA findBy
+14:27:17.893 [main] INFO  utils.mysql.TrainDao - Parsing result set
+14:27:17.894 [main] INFO  utils.mysql.WagonDAO - trying to get wagons from DB via findBy
+14:27:17.894 [main] INFO  utils.mysql.WagonDAO - trying to parse result set
+14:27:17.895 [main] INFO  utils.mysql.TrainDao - trying to get data from DB VIA findBy
+14:27:17.895 [main] INFO  utils.mysql.TrainDao - Parsing result set
+14:27:17.896 [main] INFO  utils.mysql.WagonDAO - trying to get wagons from DB via findBy
+14:27:17.896 [main] INFO  utils.mysql.WagonDAO - trying to parse result set
+14:27:17.900 [main] INFO  utils.mysql.Factory - Creating FACTORY class
+14:27:17.900 [main] INFO  utils.mysql.Factory - Getting connection
+14:27:17.914 [main] INFO  utils.mysql.UserDao - Trying to parse result set
+14:27:17.915 [main] INFO  utils.mysql.Factory - Closing connection
+14:27:17.915 [main] INFO  utils.mysql.Factory - Creating FACTORY class
+14:27:17.915 [main] INFO  utils.mysql.Factory - Getting connection
+14:27:17.930 [main] INFO  utils.mysql.UserDao - Trying to set prepare statement for INSERT method
+14:27:17.933 [main] INFO  utils.mysql.UserDao - Getting data from findBy method
+14:27:17.934 [main] INFO  utils.mysql.UserDao - Trying to parse result set
+14:27:17.934 [main] INFO  utils.mysql.UserDao - Getting data from findBy method
+14:27:17.935 [main] INFO  utils.mysql.UserDao - Trying to parse result set
+14:27:17.935 [main] INFO  utils.mysql.UserDao - Trying to set prepare statement for UPDATE method
+14:27:17.938 [main] INFO  utils.mysql.UserDao - Getting data from findBy method
+14:27:17.939 [main] INFO  utils.mysql.UserDao - Trying to parse result set
+14:27:17.939 [main] INFO  utils.mysql.UserDao - Trying to parse result set
+14:27:17.939 [main] INFO  utils.mysql.UserDao - Getting data from findBy method
+14:27:17.940 [main] INFO  utils.mysql.UserDao - Trying to parse result set
+14:27:17.943 [main] INFO  utils.mysql.UserDao - Trying to parse result set
+14:27:17.944 [main] INFO  utils.mysql.Factory - Closing connection
+14:27:17.944 [main] INFO  utils.mysql.Factory - Creating FACTORY class
+14:27:17.944 [main] INFO  utils.mysql.Factory - Getting connection
+14:27:17.958 [main] INFO  utils.mysql.Factory - Closing connection
+14:27:17.959 [main] INFO  utils.mysql.Factory - Creating FACTORY class
+14:27:17.959 [main] INFO  utils.mysql.Factory - Returning Dao class
+14:27:17.959 [main] INFO  utils.mysql.Factory - Closing connection
+14:27:17.959 [main] INFO  utils.mysql.Factory - Creating FACTORY class
+14:27:17.960 [main] INFO  utils.mysql.Factory - Getting connection
+14:27:17.972 [main] INFO  utils.mysql.TrainDao - trying to get data from DB VIA findBy
+14:27:17.973 [main] INFO  utils.mysql.TrainDao - Parsing result set
+14:27:17.974 [main] INFO  utils.mysql.WagonDAO - trying to get wagons from DB via findBy
+14:27:17.975 [main] INFO  utils.mysql.WagonDAO - trying to parse result set
+14:27:17.975 [main] INFO  utils.mysql.TrainDao - Parsing result set
+14:27:17.975 [main] INFO  utils.mysql.WagonDAO - trying to get wagons from DB via findBy
+14:27:17.976 [main] INFO  utils.mysql.WagonDAO - trying to parse result set
+14:27:17.977 [main] INFO  utils.mysql.Factory - Closing connection
+14:27:17.977 [main] INFO  utils.mysql.Factory - Creating FACTORY class
+14:27:17.978 [main] INFO  utils.mysql.Factory - Getting connection
+14:27:17.991 [main] INFO  utils.mysql.UserDao - Getting data from findBy method
+14:27:17.992 [main] INFO  utils.mysql.UserDao - Trying to parse result set
+14:27:17.992 [main] INFO  utils.mysql.Factory - Closing connection
+14:27:17.993 [main] INFO  utils.mysql.Factory - Creating FACTORY class
+14:27:17.993 [main] INFO  utils.mysql.Factory - Getting connection
+14:27:18.007 [main] INFO  utils.mysql.UserDao - Getting data from findBy method
+14:27:18.008 [main] INFO  utils.mysql.UserDao - Trying to parse result set
+14:27:18.009 [main] INFO  utils.mysql.Factory - Closing connection
+14:27:18.009 [main] INFO  utils.mysql.Factory - Creating FACTORY class
+14:27:18.009 [main] INFO  utils.mysql.Factory - Getting connection
+14:27:18.022 [main] INFO  utils.mysql.TrainDao - Parsing result set
+14:27:18.022 [main] INFO  utils.mysql.WagonDAO - trying to get wagons from DB via findBy
+14:27:18.023 [main] INFO  utils.mysql.WagonDAO - trying to parse result set
+14:27:18.023 [main] INFO  utils.mysql.TrainDao - Parsing result set
+14:27:18.024 [main] INFO  utils.mysql.WagonDAO - trying to get wagons from DB via findBy
+14:27:18.024 [main] INFO  utils.mysql.WagonDAO - trying to parse result set
+14:27:18.025 [main] INFO  utils.mysql.WagonDAO - trying to get wagons from DB via findBy
+14:27:18.025 [main] INFO  utils.mysql.WagonDAO - trying to parse result set
+14:27:18.025 [main] INFO  utils.mysql.Factory - Closing connection
+17:21:24.698 [main] INFO  utils.mysql.Factory - Creating FACTORY class
+17:21:24.719 [main] INFO  utils.mysql.Factory - Getting connection
+17:21:25.052 [main] INFO  utils.mysql.TrainDao - trying to get data from DB VIA findBy
+17:21:25.074 [main] INFO  utils.mysql.Factory - Closing connection
+17:21:25.078 [main] INFO  utils.mysql.Factory - Creating FACTORY class
+17:21:25.078 [main] INFO  utils.mysql.Factory - Getting connection
+17:21:25.099 [main] INFO  utils.mysql.Factory - Closing connection
+17:21:25.100 [main] INFO  utils.mysql.Factory - Creating FACTORY class
+17:21:25.100 [main] INFO  utils.mysql.Factory - Getting connection
+17:21:25.122 [main] INFO  utils.mysql.UserDao - Getting data from findBy method
+17:21:25.123 [main] INFO  utils.mysql.UserDao - Trying to parse result set
+17:21:25.123 [main] INFO  servlet.loginServlets.LoginServlet - User test trying to login
+17:21:25.123 [main] INFO  servlet.loginServlets.LoginServlet - Getting connection to DB
+17:21:25.123 [main] INFO  utils.mysql.Factory - Creating FACTORY class
+17:21:25.124 [main] INFO  utils.mysql.Factory - Getting connection
+17:21:25.147 [main] INFO  utils.mysql.UserDao - Getting data from findBy method
+17:21:25.148 [main] INFO  utils.mysql.UserDao - Trying to parse result set
+17:21:25.148 [main] INFO  servlet.loginServlets.LoginServlet - Closing connection
+17:21:25.148 [main] INFO  utils.mysql.Factory - Closing connection
+17:21:25.150 [main] INFO  utils.mysql.Factory - Closing connection
+17:21:25.155 [main] INFO  utils.mysql.Factory - Creating FACTORY class
+17:21:25.155 [main] INFO  utils.mysql.Factory - Getting connection
+17:21:25.172 [main] INFO  utils.mysql.Factory - Creating FACTORY class
+17:21:25.172 [main] INFO  utils.mysql.Factory - Getting connection
+17:21:25.188 [main] INFO  utils.mysql.UserDao - Getting data from findBy method
+17:21:25.189 [main] INFO  utils.mysql.UserDao - Trying to parse result set
+17:21:25.189 [main] INFO  servlet.loginServlets.RegisterServlet - New user registration
+17:21:25.190 [main] INFO  servlet.loginServlets.RegisterServlet - Opening connection to DB
+17:21:25.190 [main] INFO  utils.mysql.Factory - Creating FACTORY class
+17:21:25.190 [main] INFO  utils.mysql.Factory - Getting connection
+17:21:25.208 [main] INFO  utils.mysql.UserDao - Getting data from findBy method
+17:21:25.209 [main] INFO  utils.mysql.UserDao - Trying to parse result set
+17:21:25.210 [main] INFO  utils.mysql.UserDao - Trying to set prepare statement for INSERT method
+17:21:25.213 [main] INFO  servlet.loginServlets.LoginServlet - Storing logged user in session
+17:21:25.214 [main] WARN  servlet.loginServlets.LoginServlet - null
+17:21:25.214 [main] INFO  servlet.loginServlets.RegisterServlet - Closing connection to DB
+17:21:25.214 [main] INFO  utils.mysql.Factory - Closing connection
+17:21:25.214 [main] INFO  utils.mysql.UserDao - Getting data from findBy method
+17:21:25.215 [main] INFO  utils.mysql.UserDao - Trying to parse result set
+17:21:25.216 [main] INFO  utils.mysql.UserDao - Getting data from findBy method
+17:21:25.217 [main] INFO  utils.mysql.UserDao - Trying to parse result set
+17:21:25.221 [main] INFO  utils.mysql.Factory - Creating FACTORY class
+17:21:25.221 [main] INFO  utils.mysql.Factory - Getting connection
+17:21:25.238 [main] INFO  utils.mysql.TrainDao - Parsing result set
+17:21:25.239 [main] INFO  utils.mysql.WagonDAO - trying to get wagons from DB via findBy
+17:21:25.240 [main] INFO  utils.mysql.WagonDAO - trying to parse result set
+17:21:25.241 [main] INFO  utils.mysql.TrainDao - Parsing result set
+17:21:25.241 [main] INFO  utils.mysql.WagonDAO - trying to get wagons from DB via findBy
+17:21:25.242 [main] INFO  utils.mysql.WagonDAO - trying to parse result set
+17:21:25.242 [main] INFO  utils.mysql.TrainDao - Parsing result set
+17:21:25.243 [main] INFO  utils.mysql.WagonDAO - trying to get wagons from DB via findBy
+17:21:25.244 [main] INFO  utils.mysql.WagonDAO - trying to parse result set
+17:21:25.244 [main] INFO  utils.mysql.UserDao - Trying to parse result set
+17:21:25.245 [main] INFO  utils.mysql.WagonDAO - trying to parse result set
+17:21:25.245 [main] INFO  utils.mysql.Factory - Closing connection
+17:21:25.247 [main] INFO  utils.mysql.Factory - Creating FACTORY class
+17:21:25.247 [main] INFO  utils.mysql.Factory - Creating FACTORY class
+17:21:25.247 [main] INFO  utils.mysql.Factory - Getting connection
+17:21:25.267 [main] INFO  utils.mysql.Factory - Creating FACTORY class
+17:21:25.268 [main] INFO  utils.mysql.Factory - Creating FACTORY class
+17:21:25.268 [main] INFO  utils.mysql.Factory - Getting connection
+17:21:25.288 [main] INFO  utils.mysql.TrainDao - Trying to set prepare statement for INSERT method
+17:21:25.291 [main] INFO  utils.mysql.TrainDao - trying to get data from DB VIA findBy
+17:21:25.292 [main] INFO  utils.mysql.TrainDao - Parsing result set
+17:21:25.292 [main] INFO  utils.mysql.WagonDAO - trying to get wagons from DB via findBy
+17:21:25.293 [main] INFO  utils.mysql.WagonDAO - trying to parse result set
+17:21:25.296 [main] INFO  utils.mysql.Factory - Getting connection
+17:21:25.314 [main] INFO  utils.mysql.TrainDao - Parsing result set
+17:21:25.314 [main] INFO  utils.mysql.WagonDAO - trying to get wagons from DB via findBy
+17:21:25.315 [main] INFO  utils.mysql.WagonDAO - trying to parse result set
+17:21:25.316 [main] INFO  utils.mysql.TrainDao - Trying to set prepare statement for UPDATE method
+17:21:25.319 [main] INFO  utils.mysql.Factory - Closing connection
+17:21:25.320 [main] INFO  utils.mysql.TrainDao - trying to get data from DB VIA findBy
+17:21:25.321 [main] INFO  utils.mysql.TrainDao - Parsing result set
+17:21:25.322 [main] INFO  utils.mysql.WagonDAO - trying to get wagons from DB via findBy
+17:21:25.323 [main] INFO  utils.mysql.WagonDAO - trying to parse result set
+17:21:25.329 [main] INFO  utils.mysql.Factory - Creating FACTORY class
+17:21:25.329 [main] INFO  utils.mysql.Factory - Creating FACTORY class
+17:21:25.329 [main] INFO  utils.mysql.Factory - Getting connection
+17:21:25.345 [main] INFO  utils.mysql.TrainDao - Trying to set prepare statement for INSERT method
+17:21:25.349 [main] INFO  utils.mysql.TrainDao - trying to get data from DB VIA findBy
+17:21:25.350 [main] INFO  utils.mysql.TrainDao - Parsing result set
+17:21:25.350 [main] INFO  utils.mysql.WagonDAO - trying to get wagons from DB via findBy
+17:21:25.351 [main] INFO  utils.mysql.WagonDAO - trying to parse result set
+17:21:25.351 [main] INFO  utils.mysql.Factory - Getting connection
+17:21:25.375 [main] INFO  utils.mysql.TrainDao - Parsing result set
+17:21:25.375 [main] INFO  utils.mysql.WagonDAO - trying to get wagons from DB via findBy
+17:21:25.376 [main] INFO  utils.mysql.WagonDAO - trying to parse result set
+17:21:25.380 [main] INFO  utils.mysql.Factory - Closing connection
+17:21:25.380 [main] INFO  utils.mysql.TrainDao - trying to get data from DB VIA findBy
+17:21:25.382 [main] INFO  utils.mysql.Factory - Creating FACTORY class
+17:21:25.382 [main] INFO  utils.mysql.Factory - Creating FACTORY class
+17:21:25.382 [main] INFO  utils.mysql.Factory - Getting connection
+17:21:25.399 [main] INFO  utils.mysql.TrainDao - trying to get data from DB VIA findBy
+17:21:25.400 [main] INFO  utils.mysql.Factory - Getting connection
+17:21:25.415 [main] INFO  utils.mysql.TrainDao - Trying to set prepare statement for INSERT method
+17:21:25.418 [main] INFO  utils.mysql.Factory - Closing connection
+17:21:25.419 [main] INFO  utils.mysql.TrainDao - trying to get data from DB VIA findBy
+17:21:25.420 [main] INFO  utils.mysql.TrainDao - Parsing result set
+17:21:25.420 [main] INFO  utils.mysql.WagonDAO - trying to get wagons from DB via findBy
+17:21:25.421 [main] INFO  utils.mysql.WagonDAO - trying to parse result set
+17:21:25.422 [main] INFO  utils.mysql.TrainDao - trying to get data from DB VIA findBy
+17:21:25.423 [main] INFO  utils.mysql.TrainDao - Parsing result set
+17:21:25.423 [main] INFO  utils.mysql.WagonDAO - trying to get wagons from DB via findBy
+17:21:25.424 [main] INFO  utils.mysql.WagonDAO - trying to parse result set
+17:21:25.428 [main] INFO  utils.mysql.Factory - Creating FACTORY class
+17:21:25.428 [main] INFO  utils.mysql.Factory - Getting connection
+17:21:25.446 [main] INFO  utils.mysql.UserDao - Trying to parse result set
+17:21:25.446 [main] INFO  utils.mysql.Factory - Closing connection
+17:21:25.447 [main] INFO  utils.mysql.Factory - Creating FACTORY class
+17:21:25.447 [main] INFO  utils.mysql.Factory - Getting connection
+17:21:25.463 [main] INFO  utils.mysql.UserDao - Trying to set prepare statement for INSERT method
+17:21:25.466 [main] INFO  utils.mysql.UserDao - Getting data from findBy method
+17:21:25.467 [main] INFO  utils.mysql.UserDao - Trying to parse result set
+17:21:25.467 [main] INFO  utils.mysql.UserDao - Getting data from findBy method
+17:21:25.468 [main] INFO  utils.mysql.UserDao - Trying to parse result set
+17:21:25.468 [main] INFO  utils.mysql.UserDao - Trying to set prepare statement for UPDATE method
+17:21:25.472 [main] INFO  utils.mysql.UserDao - Getting data from findBy method
+17:21:25.473 [main] INFO  utils.mysql.UserDao - Trying to parse result set
+17:21:25.474 [main] INFO  utils.mysql.UserDao - Trying to parse result set
+17:21:25.474 [main] INFO  utils.mysql.UserDao - Getting data from findBy method
+17:21:25.475 [main] INFO  utils.mysql.UserDao - Trying to parse result set
+17:21:25.478 [main] INFO  utils.mysql.UserDao - Trying to parse result set
+17:21:25.479 [main] INFO  utils.mysql.Factory - Closing connection
+17:21:25.480 [main] INFO  utils.mysql.Factory - Creating FACTORY class
+17:21:25.480 [main] INFO  utils.mysql.Factory - Getting connection
+17:21:25.495 [main] INFO  utils.mysql.Factory - Closing connection
+17:21:25.496 [main] INFO  utils.mysql.Factory - Creating FACTORY class
+17:21:25.496 [main] INFO  utils.mysql.Factory - Returning Dao class
+17:21:25.496 [main] INFO  utils.mysql.Factory - Closing connection
+17:21:25.496 [main] INFO  utils.mysql.Factory - Creating FACTORY class
+17:21:25.496 [main] INFO  utils.mysql.Factory - Getting connection
+17:21:25.510 [main] INFO  utils.mysql.TrainDao - trying to get data from DB VIA findBy
+17:21:25.511 [main] INFO  utils.mysql.TrainDao - Parsing result set
+17:21:25.511 [main] INFO  utils.mysql.WagonDAO - trying to get wagons from DB via findBy
+17:21:25.512 [main] INFO  utils.mysql.WagonDAO - trying to parse result set
+17:21:25.512 [main] INFO  utils.mysql.TrainDao - Parsing result set
+17:21:25.512 [main] INFO  utils.mysql.WagonDAO - trying to get wagons from DB via findBy
+17:21:25.513 [main] INFO  utils.mysql.WagonDAO - trying to parse result set
+17:21:25.513 [main] INFO  utils.mysql.Factory - Closing connection
+17:21:25.514 [main] INFO  utils.mysql.Factory - Creating FACTORY class
+17:21:25.514 [main] INFO  utils.mysql.Factory - Getting connection
+17:21:25.527 [main] INFO  utils.mysql.UserDao - Getting data from findBy method
+17:21:25.528 [main] INFO  utils.mysql.UserDao - Trying to parse result set
+17:21:25.528 [main] INFO  utils.mysql.Factory - Closing connection
+17:21:25.528 [main] INFO  utils.mysql.Factory - Creating FACTORY class
+17:21:25.528 [main] INFO  utils.mysql.Factory - Getting connection
+17:21:25.544 [main] INFO  utils.mysql.UserDao - Getting data from findBy method
+17:21:25.544 [main] INFO  utils.mysql.UserDao - Trying to parse result set
+17:21:25.545 [main] INFO  utils.mysql.Factory - Closing connection
+17:21:25.545 [main] INFO  utils.mysql.Factory - Creating FACTORY class
+17:21:25.545 [main] INFO  utils.mysql.Factory - Getting connection
+17:21:25.559 [main] INFO  utils.mysql.TrainDao - Parsing result set
+17:21:25.559 [main] INFO  utils.mysql.WagonDAO - trying to get wagons from DB via findBy
+17:21:25.560 [main] INFO  utils.mysql.WagonDAO - trying to parse result set
+17:21:25.560 [main] INFO  utils.mysql.TrainDao - Parsing result set
+17:21:25.560 [main] INFO  utils.mysql.WagonDAO - trying to get wagons from DB via findBy
+17:21:25.561 [main] INFO  utils.mysql.WagonDAO - trying to parse result set
+17:21:25.561 [main] INFO  utils.mysql.TrainDao - Parsing result set
+17:21:25.561 [main] INFO  utils.mysql.WagonDAO - trying to get wagons from DB via findBy
+17:21:25.562 [main] INFO  utils.mysql.WagonDAO - trying to parse result set
+17:21:25.562 [main] INFO  utils.mysql.WagonDAO - trying to get wagons from DB via findBy
+17:21:25.563 [main] INFO  utils.mysql.WagonDAO - trying to parse result set
+17:21:25.563 [main] INFO  utils.mysql.Factory - Closing connection
+18:57:28.684 [main] INFO  utils.AppUtils - Getting stored user from session
+18:57:28.732 [main] INFO  utils.mysql.Factory - Creating FACTORY class
+18:57:28.740 [main] INFO  utils.mysql.Factory - Getting connection
+18:57:29.228 [main] INFO  utils.mysql.TrainDao - trying to get data from DB VIA findBy
+18:57:29.249 [main] INFO  utils.mysql.Factory - Closing connection
+18:57:29.252 [main] INFO  utils.mysql.Factory - Creating FACTORY class
+18:57:29.252 [main] INFO  utils.mysql.Factory - Getting connection
+18:57:29.274 [main] INFO  utils.mysql.Factory - Closing connection
+18:57:29.275 [main] INFO  utils.mysql.Factory - Creating FACTORY class
+18:57:29.275 [main] INFO  utils.mysql.Factory - Getting connection
+18:57:29.298 [main] INFO  utils.mysql.UserDao - Getting data from findBy method
+18:57:29.299 [main] INFO  utils.mysql.UserDao - Trying to parse result set
+18:57:29.300 [main] INFO  servlet.loginServlets.LoginServlet - User test trying to login
+18:57:29.300 [main] INFO  utils.mysql.Factory - Creating FACTORY class
+18:57:29.300 [main] INFO  utils.mysql.Factory - Getting connection
+18:57:29.329 [main] INFO  utils.mysql.UserDao - Getting data from findBy method
+18:57:29.330 [main] INFO  utils.mysql.UserDao - Trying to parse result set
+18:57:29.331 [main] INFO  utils.mysql.Factory - Closing connection
+18:57:29.334 [main] INFO  utils.mysql.Factory - Closing connection
+18:57:29.338 [main] INFO  utils.mysql.Factory - Creating FACTORY class
+18:57:29.338 [main] INFO  utils.mysql.Factory - Getting connection
+18:57:29.357 [main] INFO  utils.mysql.Factory - Creating FACTORY class
+18:57:29.357 [main] INFO  utils.mysql.Factory - Getting connection
+18:57:29.375 [main] INFO  utils.mysql.UserDao - Getting data from findBy method
+18:57:29.376 [main] INFO  utils.mysql.UserDao - Trying to parse result set
+18:57:29.376 [main] INFO  servlet.loginServlets.RegisterServlet - New user registration
+18:57:29.376 [main] INFO  utils.mysql.Factory - Creating FACTORY class
+18:57:29.376 [main] INFO  utils.mysql.Factory - Getting connection
+18:57:29.390 [main] INFO  utils.mysql.UserDao - Getting data from findBy method
+18:57:29.391 [main] INFO  utils.mysql.UserDao - Trying to parse result set
+18:57:29.392 [main] INFO  utils.mysql.UserDao - Trying to set prepare statement for INSERT method
+18:57:29.397 [main] INFO  utils.AppUtils - Storing logged user to session
+18:57:29.397 [main] WARN  servlet.loginServlets.LoginServlet - null
+18:57:29.397 [main] INFO  utils.AppUtils - Returning redirect ID
+18:57:29.397 [main] INFO  utils.mysql.Factory - Closing connection
+18:57:29.398 [main] INFO  utils.mysql.UserDao - Getting data from findBy method
+18:57:29.399 [main] INFO  utils.mysql.UserDao - Trying to parse result set
+18:57:29.399 [main] INFO  utils.mysql.UserDao - Getting data from findBy method
+18:57:29.400 [main] INFO  utils.mysql.UserDao - Trying to parse result set
+18:57:29.405 [main] INFO  utils.mysql.Factory - Creating FACTORY class
+18:57:29.406 [main] INFO  utils.mysql.Factory - Getting connection
+18:57:29.421 [main] INFO  utils.mysql.TrainDao - Parsing result set
+18:57:29.422 [main] INFO  utils.mysql.WagonDAO - trying to get wagons from DB via findBy
+18:57:29.423 [main] INFO  utils.mysql.WagonDAO - trying to parse result set
+18:57:29.423 [main] INFO  utils.mysql.TrainDao - Parsing result set
+18:57:29.424 [main] INFO  utils.mysql.WagonDAO - trying to get wagons from DB via findBy
+18:57:29.424 [main] INFO  utils.mysql.WagonDAO - trying to parse result set
+18:57:29.425 [main] INFO  utils.mysql.TrainDao - Parsing result set
+18:57:29.425 [main] INFO  utils.mysql.WagonDAO - trying to get wagons from DB via findBy
+18:57:29.426 [main] INFO  utils.mysql.WagonDAO - trying to parse result set
+18:57:29.427 [main] INFO  utils.mysql.UserDao - Trying to parse result set
+18:57:29.427 [main] INFO  utils.mysql.WagonDAO - trying to parse result set
+18:57:29.427 [main] INFO  utils.mysql.Factory - Closing connection
+18:57:29.429 [main] INFO  utils.mysql.Factory - Creating FACTORY class
+18:57:29.429 [main] INFO  utils.mysql.Factory - Creating FACTORY class
+18:57:29.429 [main] INFO  utils.mysql.Factory - Getting connection
+18:57:29.449 [main] INFO  utils.mysql.Factory - Creating FACTORY class
+18:57:29.449 [main] INFO  utils.mysql.Factory - Creating FACTORY class
+18:57:29.449 [main] INFO  utils.mysql.Factory - Getting connection
+18:57:29.468 [main] INFO  utils.mysql.TrainDao - Trying to set prepare statement for INSERT method
+18:57:29.471 [main] INFO  utils.mysql.TrainDao - trying to get data from DB VIA findBy
+18:57:29.472 [main] INFO  utils.mysql.TrainDao - Parsing result set
+18:57:29.473 [main] INFO  utils.mysql.WagonDAO - trying to get wagons from DB via findBy
+18:57:29.474 [main] INFO  utils.mysql.WagonDAO - trying to parse result set
+18:57:29.476 [main] INFO  utils.mysql.Factory - Getting connection
+18:57:29.493 [main] INFO  utils.mysql.TrainDao - Parsing result set
+18:57:29.493 [main] INFO  utils.mysql.WagonDAO - trying to get wagons from DB via findBy
+18:57:29.494 [main] INFO  utils.mysql.WagonDAO - trying to parse result set
+18:57:29.494 [main] INFO  utils.mysql.TrainDao - Trying to set prepare statement for UPDATE method
+18:57:29.498 [main] INFO  utils.mysql.Factory - Closing connection
+18:57:29.498 [main] INFO  utils.mysql.TrainDao - trying to get data from DB VIA findBy
+18:57:29.499 [main] INFO  utils.mysql.TrainDao - Parsing result set
+18:57:29.500 [main] INFO  utils.mysql.WagonDAO - trying to get wagons from DB via findBy
+18:57:29.501 [main] INFO  utils.mysql.WagonDAO - trying to parse result set
+18:57:29.506 [main] INFO  utils.mysql.Factory - Creating FACTORY class
+18:57:29.507 [main] INFO  utils.mysql.Factory - Creating FACTORY class
+18:57:29.507 [main] INFO  utils.mysql.Factory - Getting connection
+18:57:29.522 [main] INFO  utils.mysql.TrainDao - Trying to set prepare statement for INSERT method
+18:57:29.525 [main] INFO  utils.mysql.TrainDao - trying to get data from DB VIA findBy
+18:57:29.526 [main] INFO  utils.mysql.TrainDao - Parsing result set
+18:57:29.527 [main] INFO  utils.mysql.WagonDAO - trying to get wagons from DB via findBy
+18:57:29.527 [main] INFO  utils.mysql.WagonDAO - trying to parse result set
+18:57:29.528 [main] INFO  utils.mysql.Factory - Getting connection
+18:57:29.549 [main] INFO  utils.mysql.TrainDao - Parsing result set
+18:57:29.549 [main] INFO  utils.mysql.WagonDAO - trying to get wagons from DB via findBy
+18:57:29.550 [main] INFO  utils.mysql.WagonDAO - trying to parse result set
+18:57:29.554 [main] INFO  utils.mysql.Factory - Closing connection
+18:57:29.554 [main] INFO  utils.mysql.TrainDao - trying to get data from DB VIA findBy
+18:57:29.556 [main] INFO  utils.mysql.Factory - Creating FACTORY class
+18:57:29.556 [main] INFO  utils.mysql.Factory - Creating FACTORY class
+18:57:29.556 [main] INFO  utils.mysql.Factory - Getting connection
+18:57:29.572 [main] INFO  utils.mysql.TrainDao - trying to get data from DB VIA findBy
+18:57:29.574 [main] INFO  utils.mysql.Factory - Getting connection
+18:57:29.588 [main] INFO  utils.mysql.TrainDao - Trying to set prepare statement for INSERT method
+18:57:29.591 [main] INFO  utils.mysql.Factory - Closing connection
+18:57:29.591 [main] INFO  utils.mysql.TrainDao - trying to get data from DB VIA findBy
+18:57:29.592 [main] INFO  utils.mysql.TrainDao - Parsing result set
+18:57:29.592 [main] INFO  utils.mysql.WagonDAO - trying to get wagons from DB via findBy
+18:57:29.593 [main] INFO  utils.mysql.WagonDAO - trying to parse result set
+18:57:29.593 [main] INFO  utils.mysql.TrainDao - trying to get data from DB VIA findBy
+18:57:29.594 [main] INFO  utils.mysql.TrainDao - Parsing result set
+18:57:29.594 [main] INFO  utils.mysql.WagonDAO - trying to get wagons from DB via findBy
+18:57:29.595 [main] INFO  utils.mysql.WagonDAO - trying to parse result set
+18:57:29.598 [main] INFO  utils.mysql.Factory - Creating FACTORY class
+18:57:29.599 [main] INFO  utils.mysql.Factory - Getting connection
+18:57:29.612 [main] INFO  utils.mysql.UserDao - Trying to parse result set
+18:57:29.613 [main] INFO  utils.mysql.Factory - Closing connection
+18:57:29.613 [main] INFO  utils.mysql.Factory - Creating FACTORY class
+18:57:29.613 [main] INFO  utils.mysql.Factory - Getting connection
+18:57:29.629 [main] INFO  utils.mysql.UserDao - Trying to set prepare statement for INSERT method
+18:57:29.632 [main] INFO  utils.mysql.UserDao - Getting data from findBy method
+18:57:29.633 [main] INFO  utils.mysql.UserDao - Trying to parse result set
+18:57:29.633 [main] INFO  utils.mysql.UserDao - Getting data from findBy method
+18:57:29.634 [main] INFO  utils.mysql.UserDao - Trying to parse result set
+18:57:29.634 [main] INFO  utils.mysql.UserDao - Trying to set prepare statement for UPDATE method
+18:57:29.637 [main] INFO  utils.mysql.UserDao - Getting data from findBy method
+18:57:29.645 [main] INFO  utils.mysql.UserDao - Trying to parse result set
+18:57:29.646 [main] INFO  utils.mysql.UserDao - Trying to parse result set
+18:57:29.647 [main] INFO  utils.mysql.UserDao - Getting data from findBy method
+18:57:29.648 [main] INFO  utils.mysql.UserDao - Trying to parse result set
+18:57:29.651 [main] INFO  utils.mysql.UserDao - Trying to parse result set
+18:57:29.652 [main] INFO  utils.mysql.Factory - Closing connection
+18:57:29.653 [main] INFO  utils.mysql.Factory - Creating FACTORY class
+18:57:29.653 [main] INFO  utils.mysql.Factory - Getting connection
+18:57:29.667 [main] INFO  utils.mysql.Factory - Closing connection
+18:57:29.668 [main] INFO  utils.mysql.Factory - Creating FACTORY class
+18:57:29.668 [main] INFO  utils.mysql.Factory - Returning Dao class
+18:57:29.668 [main] INFO  utils.mysql.Factory - Closing connection
+18:57:29.668 [main] INFO  utils.mysql.Factory - Creating FACTORY class
+18:57:29.668 [main] INFO  utils.mysql.Factory - Getting connection
+18:57:29.682 [main] INFO  utils.mysql.TrainDao - trying to get data from DB VIA findBy
+18:57:29.683 [main] INFO  utils.mysql.TrainDao - Parsing result set
+18:57:29.683 [main] INFO  utils.mysql.WagonDAO - trying to get wagons from DB via findBy
+18:57:29.684 [main] INFO  utils.mysql.WagonDAO - trying to parse result set
+18:57:29.684 [main] INFO  utils.mysql.TrainDao - Parsing result set
+18:57:29.684 [main] INFO  utils.mysql.WagonDAO - trying to get wagons from DB via findBy
+18:57:29.685 [main] INFO  utils.mysql.WagonDAO - trying to parse result set
+18:57:29.686 [main] INFO  utils.mysql.Factory - Closing connection
+18:57:29.686 [main] INFO  utils.mysql.Factory - Creating FACTORY class
+18:57:29.687 [main] INFO  utils.mysql.Factory - Getting connection
+18:57:29.700 [main] INFO  utils.mysql.UserDao - Getting data from findBy method
+18:57:29.701 [main] INFO  utils.mysql.UserDao - Trying to parse result set
+18:57:29.701 [main] INFO  utils.mysql.Factory - Closing connection
+18:57:29.702 [main] INFO  utils.mysql.Factory - Creating FACTORY class
+18:57:29.702 [main] INFO  utils.mysql.Factory - Getting connection
+18:57:29.717 [main] INFO  utils.mysql.UserDao - Getting data from findBy method
+18:57:29.718 [main] INFO  utils.mysql.UserDao - Trying to parse result set
+18:57:29.718 [main] INFO  utils.mysql.Factory - Closing connection
+18:57:29.719 [main] INFO  utils.mysql.Factory - Creating FACTORY class
+18:57:29.719 [main] INFO  utils.mysql.Factory - Getting connection
+18:57:29.731 [main] INFO  utils.mysql.TrainDao - Parsing result set
+18:57:29.731 [main] INFO  utils.mysql.WagonDAO - trying to get wagons from DB via findBy
+18:57:29.732 [main] INFO  utils.mysql.WagonDAO - trying to parse result set
+18:57:29.732 [main] INFO  utils.mysql.TrainDao - Parsing result set
+18:57:29.732 [main] INFO  utils.mysql.WagonDAO - trying to get wagons from DB via findBy
+18:57:29.732 [main] INFO  utils.mysql.WagonDAO - trying to parse result set
+18:57:29.732 [main] INFO  utils.mysql.TrainDao - Parsing result set
+18:57:29.733 [main] INFO  utils.mysql.WagonDAO - trying to get wagons from DB via findBy
+18:57:29.733 [main] INFO  utils.mysql.WagonDAO - trying to parse result set
+18:57:29.733 [main] INFO  utils.mysql.WagonDAO - trying to get wagons from DB via findBy
+18:57:29.734 [main] INFO  utils.mysql.WagonDAO - trying to parse result set
+18:57:29.734 [main] INFO  utils.mysql.Factory - Closing connection

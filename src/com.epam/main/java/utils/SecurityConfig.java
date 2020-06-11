@@ -2,12 +2,15 @@ package utils;
 
 import java.util.*;
 
+/**
+ * SecurityConfig помогает конфигурировать роли и функции, позволяющие иметь с той ролью
+ * */
 public class SecurityConfig {
     public static final String ROLE_MANAGER = "MANAGER";
     public static final String ROLE_USER = "USER";
 
-    // String: Role
-    // List<String>: urlPatterns.
+    /**String: Role
+    *List<String>: urlPatterns.*/
     private static final Map<String, List<String>> mapConfig = new HashMap<>();
 
     static {

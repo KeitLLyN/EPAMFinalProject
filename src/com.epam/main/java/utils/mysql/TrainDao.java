@@ -24,6 +24,9 @@ public class TrainDao extends JDBCDao<Train> implements JdbcConstants {
         super(connection);
     }
 
+    /**Получение списка поездов по конкретным параметрам
+     * @param strings [from,to,date]
+     * @return Список поездов*/
     @Override
     public List<Train> findBy(String ...strings) {
         List<Train> trains = new ArrayList<>();

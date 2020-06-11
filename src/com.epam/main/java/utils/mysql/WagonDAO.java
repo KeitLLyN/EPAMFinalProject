@@ -19,6 +19,9 @@ public class WagonDAO extends JDBCDao<Wagon> implements JdbcConstants {
         super(connection);
     }
 
+    /**Получение списка вагонов по конкретным параметрам
+     * @param strings [train_id - как название колонки, train_id - как значение]
+     * @return Список вагонов*/
     @Override
     public List<Wagon> findBy(String ... strings){
         List<Wagon> wagons = new ArrayList<>();
@@ -92,7 +95,7 @@ public class WagonDAO extends JDBCDao<Wagon> implements JdbcConstants {
             statement.setInt(1, wagon.getNumberOfSeats());
             statement.setInt(2, wagon.getPrice());
             statement.setString(3, wagon.getServiceClass());
-            statement.setInt(5, wagon.getId());
+            statement.setInt(4, wagon.getId());
         } catch (SQLException e) {
             LOG.error("Couldn't prepare statement for UPDATE");
             LOG.error(e.getMessage() + "\n" + Arrays.toString(e.getStackTrace()));

@@ -36,6 +36,7 @@ public class CheckoutServlet extends HttpServlet {
         }finally {
             factory.closeConnection(connection);
         }
+        response.sendRedirect("/main");
     }
 
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
@@ -48,7 +49,5 @@ public class CheckoutServlet extends HttpServlet {
 
         request.setAttribute("countOfSeats", countOfSeats);
         request.getRequestDispatcher("/checkout.jsp").forward(request,response);
-//        RequestDispatcher dispatcher = this.getServletContext().getRequestDispatcher("/checkout.jsp");
-//        dispatcher.forward(request,response);
     }
 }

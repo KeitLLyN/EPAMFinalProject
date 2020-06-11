@@ -21,6 +21,7 @@ import java.util.Map;
 
 public class Factory implements DaoFactory, JdbcConstants {
     private static final Logger LOG = LogManager.getLogger(Factory.class);
+    /**Поле соотношения классов Identified к Dao классам*/
     private final Map<Class<?>, GenericDao> DAO_MAP;
 
     public Factory(){
@@ -36,6 +37,10 @@ public class Factory implements DaoFactory, JdbcConstants {
         DAO_MAP.put(User.class, new UserDao());
     }
 
+    /**
+     * Получение Подключения к базе данных
+     * @return connection
+     * */
     @Override
     public Connection getConnection() {
         LOG.info("Getting connection");
@@ -48,7 +53,8 @@ public class Factory implements DaoFactory, JdbcConstants {
         }
         return connection;
     }
-
+    /**
+     * Закрывает существующиее подключение к базе данных*/
     @Override
     public void closeConnection(Connection connection){
         LOG.info("Closing connection");
@@ -59,7 +65,11 @@ public class Factory implements DaoFactory, JdbcConstants {
             LOG.error(e.getMessage() + "\n" + Arrays.toString(e.getStackTrace()));
         }
     }
-
+    /**
+     * Получение класса с доступом к базе данных
+     * @param dtoClass - класс наследник от Identified
+     * @return DTO class
+     * */
     @Override
     public GenericDao getDao(Class<?> dtoClass){
         LOG.info("Returning Dao class");

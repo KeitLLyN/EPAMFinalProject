@@ -2,15 +2,17 @@ package servlet;
 
 import entity.Train;
 import entity.Wagon;
+import utils.dao.interfaces.DaoFactory;
+import utils.dao.interfaces.GenericDao;
+import utils.mysql.Factory;
+import utils.mysql.WagonDAO;
 
 import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
-import javax.servlet.http.HttpServlet;
-import javax.servlet.http.HttpServletRequest;
-import javax.servlet.http.HttpServletResponse;
-import javax.servlet.http.HttpSession;
+import javax.servlet.http.*;
 import java.io.IOException;
+import java.sql.Connection;
 import java.util.List;
 
 @WebServlet(name = "ChooseWagonServlet", urlPatterns = "main/choose")
@@ -29,7 +31,5 @@ public class ChooseWagonServlet extends HttpServlet {
         request.setAttribute("wagons",wagons);
 
         request.getRequestDispatcher("/chooseWagon.jsp").forward(request,response);
-//        RequestDispatcher dispatcher = this.getServletContext().getRequestDispatcher("/chooseWagon.jsp");
-//        dispatcher.forward(request,response);
     }
 }

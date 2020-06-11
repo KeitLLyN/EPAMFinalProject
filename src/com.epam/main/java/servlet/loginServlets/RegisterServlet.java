@@ -8,7 +8,6 @@ import utils.dao.interfaces.GenericDao;
 import utils.mysql.Factory;
 import utils.mysql.UserDao;
 
-import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
@@ -26,6 +25,7 @@ public class RegisterServlet extends HttpServlet {
     private Connection connection;
 
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+        LOG.info("New user registration");
         String name = request.getParameter("userName");
         String email = request.getParameter("email");
         String password = request.getParameter("password");

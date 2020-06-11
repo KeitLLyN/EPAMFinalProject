@@ -4,7 +4,18 @@ import javax.servlet.http.HttpServletRequest;
 import java.util.List;
 import java.util.Set;
 
+/**
+ * В SecurityUtils находятся методы, помогающие проверить,
+ * обязывает ли request выполнить логин или нет,
+ * и подходит ли тот request с ролью пользователя вошедшего в систему или нет.
+ * */
 public class SecurityUtils {
+
+    /**
+     * Требует ли данный request входа в систему
+     * @param request запрос от пользователя
+     * @return true / false
+     * */
     public static boolean isSecurityPage(HttpServletRequest request) {
         String urlPattern = UrlPatternUtils.getUrlPattern(request);
 
@@ -19,6 +30,11 @@ public class SecurityUtils {
         return false;
     }
 
+    /**
+     * Имеет ли данный request подходящую роль
+     * @param request запрос от пользователя
+     * @return true / false
+     * */
     public static boolean hasPermission(HttpServletRequest request) {
         String urlPattern = UrlPatternUtils.getUrlPattern(request);
 

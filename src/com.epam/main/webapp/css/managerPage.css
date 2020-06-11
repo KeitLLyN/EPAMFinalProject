@@ -32,6 +32,15 @@ body, html {
     height: 100%;
 }
 
-#Trains {background-color: #bbe1ff;}
-#Users {background-color: #bbe1ff;}
-#Wagons {background-color: #bbe1ff;}
+#Trains {
+    background-color: #bbe1ff;
+    background-attachment: scroll;
+}
+#Users {
+    background-color: #bbe1ff;
+    background-attachment: scroll;
+}
+#Wagons {
+    background-color: #bbe1ff;
+    background-attachment: scroll;
+}

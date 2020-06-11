@@ -20,6 +20,9 @@ public class UserDao extends JDBCDao<User> implements JdbcConstants {
         super(connection);
     }
 
+    /**Получение списка пользователей по конкретным параметрам
+     * @param strings [email, password]
+     * @return Список пользователей*/
     @Override
     public List<User> findBy(String ... strings){
         LOG.info("Getting data from findBy method");

@@ -22,7 +22,7 @@
         <c:forEach items="${wagons}" var="wagon">
 
             <tr>
-                <form action="checkout" method="get">
+                <form action="main/checkout" method="get">
                     <td><b>#</b>${wagon.id}</td>
                     <td>${wagon.serviceClass}</td>
                     <td><input type="number" placeholder="1" min="1" max="${wagon.numberOfSeats}" name="countOfSeats" required> / ${wagon.numberOfSeats}</td>

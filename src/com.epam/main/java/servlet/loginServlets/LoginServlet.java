@@ -9,7 +9,6 @@ import utils.dao.interfaces.GenericDao;
 import utils.mysql.Factory;
 import utils.mysql.UserDao;
 
-import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
@@ -28,6 +27,7 @@ public class LoginServlet extends HttpServlet {
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         String userName = request.getParameter("userName");
         String userPassword = request.getParameter("psw");
+        LOG.info(String.format("User %s trying to login", userName));
         try {
             factory = new Factory();
             connection = factory.getConnection();

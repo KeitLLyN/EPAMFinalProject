@@ -15,7 +15,7 @@
 <div class="row">
     <div class="col-75">
         <div class="container">
-            <form action="checkout" method="post">
+            <form action="main/checkout" method="post">
 
                 <div class="row">
                     <div class="col-50">

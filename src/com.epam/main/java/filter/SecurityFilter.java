@@ -12,11 +12,24 @@ import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 import java.util.List;
 
+/**
+ * SecurityFilter выполняет обязанность проверки всех request
+ * перед тем как позволить получить доступ в защищенные страницы
+ * */
 @WebFilter("/*")
 public class SecurityFilter implements Filter {
     public void destroy() {
     }
 
+    /**
+     * @param req запрос от пользователя
+     * @param resp ответ от сервера
+     * @param chain список фильтров
+     *
+     * @throws ServletException ошибка сервлета
+     * @throws IOException ошибка ввода input/output
+     *
+     * */
     public void doFilter(ServletRequest req, ServletResponse resp, FilterChain chain) throws ServletException, IOException {
         HttpServletRequest request = (HttpServletRequest) req;
         HttpServletResponse response = (HttpServletResponse) resp;

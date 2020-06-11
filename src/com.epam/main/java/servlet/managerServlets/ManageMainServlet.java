@@ -3,6 +3,9 @@ package servlet.managerServlets;
 import entity.Train;
 import entity.User;
 import entity.Wagon;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
+import servlet.loginServlets.LoginServlet;
 import utils.dao.interfaces.DaoFactory;
 import utils.dao.interfaces.GenericDao;
 import utils.mysql.Factory;
@@ -10,7 +13,6 @@ import utils.mysql.TrainDao;
 import utils.mysql.UserDao;
 import utils.mysql.WagonDAO;
 
-import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
@@ -51,8 +53,6 @@ public class ManageMainServlet extends HttpServlet {
         request.setAttribute("users", users);
         request.setAttribute("wagons", wagons);
         request.getRequestDispatcher("/manageMainPage.jsp").forward(request,response);
-//        RequestDispatcher dispatcher = this.getServletContext().getRequestDispatcher("/manageMainPage.jsp");
-//        dispatcher.forward(request,response);
     }
 
 }
